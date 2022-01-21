@@ -1,12 +1,8 @@
-# Maintainer: Felix Yan <felixonmars@archlinux.org>
-# Maintainer: Antonio Rojas <arojas@archlinux.org>
-# Contributor: Andrea Scarpino <andrea@archlinux.org>
-
 pkgname=breeze-cursor-theme
 pkgver=5.23.5
 pkgrel=1
 arch=(any)
-pkgdesc='Artwork, styles and assets for the Breeze visual style for the Plasma Desktop'
+pkgdesc='Cursor for the Breeze visual style'
 url='https://kde.org/plasma-desktop/'
 license=(LGPL)
 source=(https://download.kde.org/stable/plasma/$pkgver/breeze-$pkgver.tar.xz)
