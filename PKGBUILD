@@ -1,12 +1,12 @@
 pkgname=breeze-cursor-theme
-pkgver=5.23.5
+pkgver=5.26.2
 pkgrel=1
 arch=(any)
 pkgdesc='Cursor for the Breeze visual style'
 url='https://kde.org/plasma-desktop/'
 license=(LGPL)
 source=(https://download.kde.org/stable/plasma/$pkgver/breeze-$pkgver.tar.xz)
-sha256sums=('2ca2a05b786ccd051e8cb1b0ac665d9443790cfaf15054359fa9adf9613edcdf')
+sha256sums=('5dd27b88a9fe92f785badf12151c30201edbd2a65756e9d714358e85f5586de5')
 
 package() {
   install -d "$pkgdir/usr/share/icons/"
