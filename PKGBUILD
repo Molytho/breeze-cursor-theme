@@ -1,13 +1,13 @@
 pkgname=breeze-cursors
-pkgver=5.26.4
+pkgver=6.4.3
 _dirver=$(echo $pkgver | cut -d. -f1-3)
 pkgrel=1
 arch=(x86_64)
-pkgdesc='Artwork, styles and assets for the Breeze visual style for the Plasma Desktop'
+pkgdesc='Cursor files for the Breeze visual style for the Plasma Desktop'
 url='https://kde.org/plasma-desktop/'
 license=(LGPL)
 source=(https://download.kde.org/stable/plasma/$_dirver/breeze-$pkgver.tar.xz{,.sig})
-sha256sums=('6c093f48b49228a01d7be1563c6f05e98c1ecf0c71c466cf45edb4328a58006b'
+sha256sums=('017a2dadf803a0c2d167489f5ba4d2a0011fc58fcf18c5e76fa6fc22f4844fbf'
             'SKIP')
 validpgpkeys=('E0A3EB202F8E57528E13E72FD7574483BB57B18D'  # Jonathan Esk-Riddell <jr@jriddell.org>
               '0AAC775BB6437A8D9AF7A3ACFE0784117FBCE11D'  # Bhushan Shah <bshah@kde.org>
@@ -17,5 +17,5 @@ validpgpkeys=('E0A3EB202F8E57528E13E72FD7574483BB57B18D'  # Jonathan Esk-Riddell
 package() {
     cd breeze-$pkgver
     install -dm755 "$pkgdir/usr/share/icons/"
-    cp -r cursors/{Breeze/Breeze,Breeze_Snow/Breeze_Snow} "$pkgdir/usr/share/icons/"
+    cp -r cursors/{Breeze/Breeze,Breeze_Light/Breeze_Light} "$pkgdir/usr/share/icons/"
 }
